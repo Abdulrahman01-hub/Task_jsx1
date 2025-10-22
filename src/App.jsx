@@ -3,7 +3,7 @@ import Card from './components/card.jsx';
 import img from './img/card.jpg';
 
 function App() {
-  const ilanlar = [
+  const elanlar = [
     { id: 1, title: "iPhone 14 Pro", price: "1800 AZN", location: "Baki", img },
     { id: 2, title: "Samsung Galaxy S23", price: "1500 AZN", location: "Sumqayit", img },
     { id: 3, title: "HP Laptop", price: "900 AZN", location: "Gəncə", img },
@@ -13,14 +13,14 @@ function App() {
   ];
 
   const cards = [];
-  for (let i = 0; i < ilanlar.length; i++) {
-    const ilan = ilanlar[i];
+  for (let i = 0; i < elanlar.length; i++) {
+    const ilan = elanlar[i];
     cards.push(<Card key={ilan.id} {...ilan} />);
   }
 
   return (
     <div className="app">
-      <h1 className="title">İlanlar</h1>
+      <h1 className="title">elanlar</h1>
       <div className="ilan-list">
         {cards}
       </div>
