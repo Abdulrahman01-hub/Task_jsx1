@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f7f7f7;
+}
+
+.app {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+}
+
+.ilan-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h2 {
+  font-size: 1.2rem;
+  margin: 0 0 10px;
+  color: #222;
+}
+
+.card-content p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
